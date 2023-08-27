@@ -1,0 +1,335 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1440px;
+  padding: 0px 32px 0px 32px;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  padding-top: 40px;
+  justify-content: space-between;
+}
+@media (max-width: 760px) {
+  .row {
+    justify-content: center;
+  }
+}
+
+.col-4 {
+  flex: 0 0 auto;
+  margin-bottom: 25px;
+  width: 350px !important;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: gray;
+  transition: 0.5s;
+}
+
+.left {
+  margin-left: 27px !important;
+  transition: 0.5s !important;
+}
+
+.right {
+  margin-left: -6px !important;
+  transition: 0.5s !important;
+}
+
+.light {
+  background-color: white !important;
+  transition: 0.5s !important;
+}
+.light header {
+  background-color: white;
+}
+.light footer {
+  background-color: white;
+  transition: 0.5s;
+}
+.light .modal .main-md {
+  background-color: white;
+}
+.light main .container .length-card {
+  background-color: lightblue;
+  transition: 0.5s;
+}
+.light .pagination {
+  padding-bottom: 80px;
+}
+.light .pagination .container .main-pg ul {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.light .pagination .container .main-pg ul li {
+  background-color: lightblue;
+  width: 32px;
+  height: 32px;
+  border-radius: 50px;
+  border: 2px solid black;
+  transition: 0.5s;
+}
+
+.top {
+  top: 100px !important;
+  transition: 0.5s !important;
+}
+
+body header {
+  padding: 8px 0px 8px 0px;
+  position: fixed;
+  width: 100%;
+  box-shadow: 1px 2px 7px 5px rgba(34, 60, 80, 0.2);
+  background-color: black;
+  z-index: 1111;
+}
+body header .container nav {
+  display: flex;
+  justify-content: space-between;
+}
+body header .container nav .logo h1 {
+  font-size: 20px;
+  line-height: 30px;
+  color: gray;
+}
+body header .container nav .mode {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body header .container nav .mode .dark-mode {
+  background-color: blue;
+  width: 30px;
+  height: 25px;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  padding-left: 7px;
+  padding-top: 1px;
+  border: 1px solid black;
+}
+body header .container nav .mode .dark-mode i.fa {
+  color: gray;
+}
+body header .container nav .mode .dark-mode .loop {
+  background-color: gray;
+  border-radius: 50px;
+  width: 25px;
+  height: 25px;
+  margin-top: -23px;
+  margin-left: -6px;
+  border: 1px solid black;
+  position: relative;
+  transition: 0.5s;
+}
+body header .container nav .mode .light-mode {
+  width: 30px;
+  height: 25px;
+  border: 1px solid black;
+  background-color: lightblue;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  margin-right: 40px;
+}
+body header .container nav .mode .light-mode i.fa {
+  color: yellow;
+  padding-left: 7px;
+  padding-top: 4px;
+}
+body header .container nav .mode select {
+  margin-right: 30px;
+  border-radius: 4px;
+  border: 2px solid black;
+  background-color: lightblue;
+  padding: 5px;
+}
+body header .container nav .mode select option {
+  font-size: 15px;
+  line-height: 23px;
+  color: gray;
+  border: 2px solid black;
+}
+body header .container nav .mode .modal-btn button {
+  border-radius: 4px;
+  background-color: lightblue;
+  border: 2px solid black;
+  padding: 2px;
+  font-size: 14px;
+  line-height: 23px;
+  color: black;
+}
+body main {
+  padding-top: 120px;
+}
+body main .container h1 {
+  font-size: 45px;
+  line-height: 55px;
+  font-weight: 700;
+}
+body main .container .length-card {
+  background-color: red;
+  border-radius: 4px;
+  border: 1px solid black;
+  padding: 4px;
+  transition: 0.5s;
+}
+body main .container section .row .col-4 {
+  border: 2px solid black;
+  border-radius: 8px;
+  padding: 12px;
+}
+body main .container section .row .col-4 .head {
+  display: flex;
+}
+body main .container section .row .col-4 .head .img {
+  border-radius: 50px !important;
+}
+body main .container section .row .col-4 .head .img img {
+  border-radius: 50px !important;
+  width: 60px;
+  height: 60px;
+}
+body main .container section .row .col-4 .head h1 {
+  margin-top: -3px;
+  font-size: 25px;
+  line-height: 35px;
+  margin-left: 10px;
+}
+body main .container section .row .col-4 .bdy {
+  padding-top: 15px;
+}
+body main .container section .row .col-4 .bdy h4 {
+  margin-bottom: 5px;
+}
+body main .container section .row .col-4 .bdy h4 p {
+  margin-left: 5px;
+}
+body main .container section .row .col-4 .bdy .card-btn {
+  padding-top: 10px;
+  display: flex;
+  gap: 20px;
+}
+body main .container section .row .col-4 .bdy .card-btn button {
+  padding: 6px;
+  color: black;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  border-radius: 4px;
+  border: 1px solid black;
+  background-color: transparent;
+}
+body .modal {
+  display: flex;
+  justify-content: center;
+  transition: 0.5s;
+  justify-content: center;
+  margin: 0 auto;
+}
+body .modal .main-md {
+  background-color: gray;
+  position: fixed;
+  width: 350px;
+  transition: 0.5s;
+  border: 2px solid black;
+  height: 400px;
+  border-radius: 5px;
+  padding: 12px;
+  top: -400px;
+}
+body .modal .main-md label {
+  display: flex;
+  margin-bottom: 10px;
+}
+body .modal .main-md select {
+  margin-bottom: 10px;
+}
+body .modal .main-md button {
+  margin-top: 100px;
+  border: 1px solid black;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+  padding: 4px;
+  border-radius: 4px;
+  background-color: transparent;
+}
+body #load {
+  position: fixed;
+  width: 100% !important;
+  height: 100% !important;
+  z-index: 11111;
+}
+body #load .card1 {
+  width: 80px;
+  height: 80px;
+  color: red;
+  border-radius: 50px;
+  border-left: 5px solid red;
+  position: relative;
+  top: 250px;
+  margin: 0 auto;
+  animation: 1s linear infinite;
+  animation-name: spinreverse;
+}
+body #load h1 {
+  color: white;
+  text-align: center;
+  margin-top: 100px;
+}
+body .pagination {
+  padding-bottom: 80px;
+}
+body .pagination .container .main-pg ul {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+body .pagination .container .main-pg ul li {
+  background-color: red;
+  width: 32px;
+  height: 32px;
+  border-radius: 50px;
+  border: 2px solid black;
+  transition: 0.5s;
+}
+body .pagination .container .main-pg ul li i.fa {
+  text-align: center;
+  padding-left: 6px;
+  padding-top: 6px;
+}
+body .pagination .container .main-pg ul li p.page-link {
+  color: black;
+  padding-left: 5px;
+  padding-top: 5px;
+}
+body footer {
+  background-color: black;
+  height: 80px;
+  box-shadow: -2px -7px 13px 0px rgba(34, 60, 80, 0.2);
+}
+body footer .container h1 {
+  color: gray;
+  text-align: center;
+  padding-top: 15px;
+}
+@keyframes spinreverse {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CRUD Students</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="../css/main.min.css">
+  <link rel="stylesheet" href="../css/header.min.css">
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <div class="logo">
+          <h1>Students</h1>
+        </div>
+        <input class="search" type="search" style="
+        padding: 4px;
+        border: 1px solid gray;
+        border-radius: 5px;
+        background-color: transparent;
+        color: gray;
+        font-weight: 700;
+        " placeholder="Search users">
+        <div class="mode">
+          <div class="dark-mode">
+            <i class="fa fa-moon"></i>
+            <div class="loop"></div>
+          </div>
+          <div class="light-mode">
+            <i class="fa fa-sun"></i>
+          </div>
+          <select name="" id="work">
+          </select>
+          <div class="modal-btn">
+            <button class="open-md">
+              Add Student
+            </button>
+          </div>
+
+        </div>
+      </nav>
+    </div>
+  </header>
+  <div class="modal">
+    <form class="modal-form" novalidate>
+      <div class="main-md">
+        <label for="name">
+          First Name
+          <br>
+
+          <input id="name" type="text" placeholder="">
+        </label>
+        <label for="last">
+          Last Name
+          <br>
+
+          <input id="last" type="text">
+        </label>
+        <label for="url">
+          Pass your url image
+          <br>
+          <input type="text" name="" id="url">
+        </label>
+        <label for="number"> Phone Number
+          <br>
+          <input id="number" type="number">
+        </label>
+        <label for="email"> Email Addres <input id="email" type="email"></label>
+        <select name="group" id="group">
+          <option value="">N11</option>
+          <option value="">N12</option>
+          <option value="">N13</option>
+          <option value="">N14</option>
+          <option value="">N15</option>
+        </select>
+        <label for="ismarry">
+          Are you Married?
+          <input id="ismarry" type="checkbox"></label>
+        <button class="close" type="button">Close</button>
+        <button onclick="modalOP()" type="submit" class="add">Add</button>
+      </div>
+    </form>
+  </div>
+  <main>
+    <div class="container">
+      <h1>Header</h1>
+      <div class="length-card">
+        <h1>There're - <span class="card-count"></span> </h1>
+      </div>
+      <section>
+        <div class="studetn-row row">
+
+        </div>
+      </section>
+    </div>
+  </main>
+  <footer>
+    <div class="container">
+      <h1><i>Designed as GitHub by Jakhongir</i></h1>
+    </div>
+  </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js"
+    integrity="sha512-uMtXmF28A2Ab/JJO2t/vYhlaa/3ahUOgj1Zf27M5rOo8/+fcTUVH0/E0ll68njmjrLqOBjXM3V9NiPFL5ywWPQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="../global js/main.js"></script>
+  <script src="../sass/js/card.js"></script>
+  <script src="../sass/js/student-card.js"></script>
+  <script src="../sass/js/student.js"></script>
+
+</body>
+
+</html>
